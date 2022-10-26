@@ -2,6 +2,7 @@ package com.sliit.fuelapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -9,10 +10,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class UserRegistration extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     EditText username, email, password, vehicleNumber;
     Button registerBtn;
+    TextView redirectToUserLoginBtn;
     private Spinner spinner;
     private static final String[] types = {"Car", "Van", "Bus", "Bike", "ThreeWheel"};
     String vehicleType="Car";
@@ -28,6 +31,15 @@ public class UserRegistration extends AppCompatActivity implements AdapterView.O
         vehicleNumber = findViewById(R.id.vehicleNumber);
         registerBtn = findViewById(R.id.registerBtn);
         spinner = (Spinner) findViewById(R.id.vehicleType);
+
+        redirectToUserLoginBtn = findViewById(R.id.redirectToUserLoginBtn);
+
+        redirectToUserLoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserRegistration.this, UserLogin.class));
+            }
+        });
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(UserRegistration.this,
                 android.R.layout.simple_spinner_item, types);

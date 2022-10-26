@@ -69,7 +69,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/stationLoginBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_password"
@@ -84,12 +84,13 @@
 
 
     <TextView
-        android:id="@+id/swipeRight"
+        android:id="@+id/redirectToStationRegBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
+        android:clickable="true"
         android:fontFamily="@font/roboto_regular"
         android:text="Don't have an account? Register"
         android:textSize="15sp" />

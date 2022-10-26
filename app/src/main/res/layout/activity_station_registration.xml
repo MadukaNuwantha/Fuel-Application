@@ -85,7 +85,7 @@
 
 
     <TextView
-        android:id="@+id/swipeRight"
+        android:id="@+id/redirectToStationLoginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -93,6 +93,7 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Already have an account? Login"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:clickable="true"/>
 
 </LinearLayout>
