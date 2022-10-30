@@ -7,14 +7,6 @@
     android:orientation="vertical"
     tools:context=".UserProfile">
 
-    <!--
-    Name
-    Email
-    Vehicle Number
-    Vehicle Type
-    Join Queue
-    Exit Queue
-    -->
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,6 +33,7 @@
             android:textSize="17sp" />
 
         <TextView
+            android:id="@+id/profile_userName"
             style="@style/TextAppearance.MaterialComponents.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,6 +60,7 @@
             android:textSize="17sp" />
 
         <TextView
+            android:id="@+id/profile_userEmail"
             style="@style/TextAppearance.MaterialComponents.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,6 +87,7 @@
             android:textSize="17sp" />
 
         <TextView
+            android:id="@+id/profile_userVehicleNumber"
             style="@style/TextAppearance.MaterialComponents.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,6 +115,7 @@
             android:textSize="17sp" />
 
         <TextView
+            android:id="@+id/profile_userVehicleType"
             style="@style/TextAppearance.MaterialComponents.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -130,10 +126,10 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/joinFuelQueueBtn"
+        android:id="@+id/profile_joinFuelQueueBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
+        android:layout_below="@id/profile_userVehicleType"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
@@ -142,6 +138,5 @@
         android:text="Join Fuel Queue"
         android:textColor="@android:color/white"
         android:textStyle="bold" />
-
 
 </LinearLayout>

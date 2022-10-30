@@ -32,6 +32,7 @@
             android:textSize="17sp" />
 
         <TextView
+            android:id="@+id/profile_stationName"
             style="@style/TextAppearance.MaterialComponents.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,6 +59,7 @@
             android:textSize="17sp" />
 
         <TextView
+            android:id="@+id/profile_stationEmail"
             style="@style/TextAppearance.MaterialComponents.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,6 +86,7 @@
             android:textSize="17sp" />
 
         <TextView
+            android:id="@+id/profile_stationFuelAmt"
             style="@style/TextAppearance.MaterialComponents.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -111,6 +114,7 @@
             android:textSize="17sp" />
 
         <TextView
+            android:id="@+id/profile_stationQueueLen"
             style="@style/TextAppearance.MaterialComponents.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -121,7 +125,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/stationFuelRefillAmount"
+        android:id="@+id/profile_stationFuelRefillAmount"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
@@ -135,10 +139,10 @@
         android:textSize="15sp" />
 
     <Button
-        android:id="@+id/stationFuelRefillBtn"
+        android:id="@+id/profile_stationFuelRefillBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
+        android:layout_below="@id/profile_stationFuelRefillAmount"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
@@ -149,10 +153,10 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/viewLogBtn"
+        android:id="@+id/profile_viewStationLogBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
+        android:layout_below="@id/profile_stationFuelRefillBtn"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"

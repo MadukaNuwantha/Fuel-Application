@@ -1,7 +1,5 @@
 package com.sliit.fuelapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,25 +10,28 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class UserRegistration extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    EditText username, email, password, vehicleNumber;
+    private static final String[] types = {"Car", "Van", "Bus", "Bike", "ThreeWheel"};
+    EditText userName, userEmail, userPassword, userVehicleNumber;
     Button registerBtn;
     TextView redirectToUserLoginBtn;
+    String name, email, password, vehicleNumber;
+    String vehicleType = "Car";
     private Spinner spinner;
-    private static final String[] types = {"Car", "Van", "Bus", "Bike", "ThreeWheel"};
-    String vehicleType="Car";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_registration);
 
-        username = findViewById(R.id.username);
-        email = findViewById(R.id.email);
-        password = findViewById(R.id.password);
-        vehicleNumber = findViewById(R.id.vehicleNumber);
-        registerBtn = findViewById(R.id.registerBtn);
-        spinner = (Spinner) findViewById(R.id.vehicleType);
+        userName = findViewById(R.id.reg_userName);
+        userEmail = findViewById(R.id.reg_userEmail);
+        userPassword = findViewById(R.id.reg_userPassword);
+        userVehicleNumber = findViewById(R.id.reg_userVehicleNumber);
+        registerBtn = findViewById(R.id.reg_userRegisterBtn);
+        spinner = (Spinner) findViewById(R.id.reg_userVehicleType);
 
         redirectToUserLoginBtn = findViewById(R.id.redirectToUserLoginBtn);
 

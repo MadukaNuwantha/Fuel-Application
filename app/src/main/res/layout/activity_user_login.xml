@@ -19,7 +19,6 @@
         android:textSize="50sp" />
 
     <TextView
-        android:id="@+id/tv_subtitle"
         style="@style/TextAppearance.MaterialComponents.Body2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,10 +29,10 @@
         android:textSize="17sp" />
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/log_userEmail"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_above="@id/et_password"
+        android:layout_above="@id/log_userPassword"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/et_custom"
@@ -44,7 +43,6 @@
         android:textSize="15sp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -56,6 +54,7 @@
         app:passwordToggleEnabled="true">
 
         <EditText
+            android:id="@+id/log_userPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
@@ -69,10 +68,10 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/userLoginBtn"
+        android:id="@+id/log_userLoginBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
+        android:layout_below="@id/log_userPassword"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
@@ -90,9 +89,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
+        android:clickable="true"
         android:fontFamily="@font/roboto_regular"
         android:text="Don't have an account? Register"
-        android:textSize="15sp"
-        android:clickable="true"/>
+        android:textSize="15sp" />
 
 </LinearLayout>

@@ -19,7 +19,6 @@
         android:textSize="50sp" />
 
     <TextView
-        android:id="@+id/tv_subtitle"
         style="@style/TextAppearance.MaterialComponents.Body2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,7 +29,7 @@
         android:textSize="17sp" />
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/log_stationName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_above="@id/et_password"
@@ -44,7 +43,7 @@
         android:textSize="15sp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/et_password"
+        android:id="@+id/log_stationPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -69,7 +68,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/stationLoginBtn"
+        android:id="@+id/log_stationLoginBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_password"

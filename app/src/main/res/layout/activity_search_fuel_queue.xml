@@ -36,7 +36,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/st_name"
+            android:id="@+id/search_stationName"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
@@ -48,10 +48,10 @@
             android:textSize="15sp" />
 
         <Button
-            android:id="@+id/searchFuelStation"
+            android:id="@+id/search_searchStationBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/et_password"
+            android:layout_below="@id/search_stationName"
             android:background="@drawable/btn_custom"
             android:fontFamily="@font/roboto_regular"
             android:text="Search"

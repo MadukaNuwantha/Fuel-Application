@@ -28,7 +28,7 @@
         android:textSize="17sp" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/reg_userName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
@@ -42,7 +42,7 @@
         android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/reg_userEmail"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
@@ -57,7 +57,7 @@
 
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/reg_userPassword"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
@@ -71,7 +71,7 @@
         android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/vehicleNumber"
+        android:id="@+id/reg_userVehicleNumber"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
@@ -85,7 +85,7 @@
         android:textSize="15sp" />
 
     <Spinner
-        android:id="@+id/vehicleType"
+        android:id="@+id/reg_userVehicleType"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
@@ -95,12 +95,11 @@
         android:fontFamily="@font/roboto_regular"
         android:spinnerMode="dropdown" />
 
-
     <Button
-        android:id="@+id/registerBtn"
+        android:id="@+id/reg_userRegisterBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
+        android:layout_below="@id/reg_userVehicleType"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/btn_custom"
@@ -108,7 +107,6 @@
         android:text="Register"
         android:textColor="@android:color/white"
         android:textStyle="bold" />
-
 
     <TextView
         android:id="@+id/redirectToUserLoginBtn"
