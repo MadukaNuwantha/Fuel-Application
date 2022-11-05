@@ -1,5 +1,6 @@
 package com.sliit.fuelapplication;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -46,6 +47,10 @@ public class StationProfile extends AppCompatActivity {
             } else {
                 Toast.makeText(StationProfile.this, "Enter a valid amount!", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        stationViewLogBtn.setOnClickListener(v -> {
+            startActivity(new Intent(StationProfile.this, StationLogView.class));
         });
 
     }
