@@ -54,6 +54,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_regular"
+            android:text="Email : "
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/queue_stationEmail"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
             android:text="Queue Length : "
             android:textAlignment="center"
             android:textSize="17sp" />
@@ -64,7 +91,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_regular"
-            android:text="100"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text=" Vehicles"
             android:textAlignment="center"
             android:textSize="17sp" />
     </LinearLayout>
@@ -91,10 +127,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_regular"
-            android:text="50 Liters"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text=" Litres"
             android:textAlignment="center"
             android:textSize="17sp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/queue_joinFuelQueueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/queue_exitWithRefillBtn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Join Fuel Queue"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/queue_refillAmount"

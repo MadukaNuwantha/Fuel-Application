@@ -1,11 +1,11 @@
 package com.sliit.fuelapplication;
 
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button userBtn, stationBtn;
@@ -20,12 +20,10 @@ public class MainActivity extends AppCompatActivity {
 
         userBtn.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, UserLogin.class));
-            finish();
         });
 
         stationBtn.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, StationLogin.class));
-            finish();
         });
     }
 }

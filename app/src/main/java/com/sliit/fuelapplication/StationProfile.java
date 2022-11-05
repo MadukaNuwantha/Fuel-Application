@@ -96,7 +96,6 @@ public class StationProfile extends AppCompatActivity {
 
         String URL = "https://fuelapplication.herokuapp.com/api/station/refill/" + StationID;
         try {
-            Log.i("fuel", refillAmt);
             RequestQueue requestQueue = Volley.newRequestQueue(this);
             JSONObject jsonBody = new JSONObject();
             jsonBody.put("fuelAmount", Double.parseDouble(refillAmt));
@@ -104,7 +103,6 @@ public class StationProfile extends AppCompatActivity {
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, URL, jsonBody, response -> {
                 try {
                     String ResponseStatus = response.getString("status");
-                    Log.i("", ResponseStatus);
 
                     if (ResponseStatus.equals("success")) {
                         getStationDetails();
