@@ -1,8 +1,8 @@
 package com.sliit.fuelapplication;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -23,11 +23,19 @@ public class UserProfile extends AppCompatActivity {
         userVehicleType = findViewById(R.id.profile_userVehicleType);
         joinFuelQueueBtn = findViewById(R.id.profile_joinFuelQueueBtn);
 
-        joinFuelQueueBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(UserProfile.this, SearchFuelQueue.class));
-            }
-        });
+        SharedPreferences sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE);
+
+        String Name = sharedPreferences.getString("name", "");
+        String Email = sharedPreferences.getString("email", "");
+        String VehicleNumber = sharedPreferences.getString("vehicleNumber", "");
+        String VehicleType = sharedPreferences.getString("vehicleType", "");
+
+        userName.setText(Name);
+        userEmail.setText(Email);
+        userVehicleNumber.setText(VehicleNumber);
+        userVehicleType.setText(VehicleType);
+
+
+        joinFuelQueueBtn.setOnClickListener(v -> startActivity(new Intent(UserProfile.this, SearchFuelQueue.class)));
     }
 }

@@ -32,7 +32,7 @@
         android:id="@+id/log_stationName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_above="@id/et_password"
+        android:layout_above="@id/log_stationPassword"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/et_custom"
@@ -43,7 +43,7 @@
         android:textSize="15sp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/log_stationPassword"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -55,6 +55,7 @@
         app:passwordToggleEnabled="true">
 
         <EditText
+            android:id="@+id/log_stationPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
@@ -71,7 +72,7 @@
         android:id="@+id/log_stationLoginBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
+        android:layout_below="@id/log_stationPassword"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
